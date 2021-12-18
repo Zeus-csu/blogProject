@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BLOG SITE</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+</head>
+<body>
+	<header>
+	
+<div class="topnav">
+  <a class="active" href="{% url 'home' %}">Home</a>
+  
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <span class="log">
+  	{% if user.is_authenticated %}
+  	<a href="{% url 'post_new' %}">Add New</a>
+  	<a href="{% url 'logout' %}">Chiqish (Quit)</a>
+  	<p>Xhush kelibsiz (Welcome), {{ user.username }} !</p>
+  	{% else %}
+  	<a href="{% url 'login' %}">Log IN</a>
+  	<a href="{% url 'signup' %}">Sign UP</a>
+  	  	{% endif %}
+  </span>
+</div>
+	<div class="cen"><h3>Imagination is humanity treasure! <br>Create something impressive.</h3></div>
+	</header>
+	<div class="container">
+		{% block content %}
+		{% endblock content %}
+	</div>
+	<footer class="cen">
+		<h3 >End of page.</h3>
+	</footer>
+</body>
+</html>  
+ 
