@@ -1,0 +1,72 @@
+/* Add a black background color to the top navigation */
+body{font-family: sans-serif;}
+.topnav {
+  background-color: #999;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #51f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  padding-left: 25px;
+  background-color: #777;
+  color: #51e;
+}
+
+.container{
+background-color: #eee;
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+.cen h3{
+  text-align: center;
+  color: #999;
+}
+.post{
+  margin:25px;
+}
+.post h2 a{
+  text-decoration: none;
+
+}
+.autor{
+  text-align:right;
+  color: #b66;
+}
+.edit a{
+  text-decoration: none;
+  color: #51f;
+  font-size: 17px;
+}
+.edit button{
+  color: #eee;
+  margin-left: 10px;
+
+}
+.log  {
+  float: right;
+  text-align: center;
+  display: inline-block;
+
+}
+.log a {
+  color: #b55;
+}
